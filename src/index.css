@@ -4,10 +4,11 @@
 
 :root {
   --bg-color: #050505;
-  --surface-glass: rgba(255, 255, 255, 0.03);
-  --border-glass: rgba(255, 255, 255, 0.1);
+  --surface-glass: rgba(255, 255, 255, 0.06);
+  --surface-glass-strong: rgba(255, 255, 255, 0.1);
+  --border-glass: rgba(255, 255, 255, 0.16);
   --accent-color: #00f38d;
-  --accent-glow: rgba(0, 243, 141, 0.4);
+  --accent-glow: rgba(0, 243, 141, 0.2);
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --font-main: 'Space Grotesk', sans-serif;
@@ -27,22 +28,27 @@
 
 @layer utilities {
   .glass-panel {
-    background: var(--surface-glass);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
     border: 1px solid var(--border-glass);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.18);
   }
-}
 
-* {
-  cursor: none;
-  /* Hide default cursor for custom one */
-}
+  .glass-nav {
+    background: rgba(10, 10, 10, 0.62);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  }
 
-a,
-button {
-  cursor: none;
+  .glass-subtle {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
 
 /* Typography Defaults override for Tailwind reset if needed */
