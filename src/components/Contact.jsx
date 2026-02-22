@@ -30,7 +30,7 @@ const Contact = () => {
 
                     <div className="flex justify-center gap-8 mt-12">
                         {[
-                            { icon: Github, href: 'https://github.com/Surafeljava' },
+                            { icon: Github, href: 'https://github.com/surafel-kindu' },
                             { icon: Linkedin, href: 'https://www.linkedin.com/in/surafelk/' },
                             { icon: Twitter, href: 'https://x.com/surafel_kindu' }
                         ].map((social, index) => (
@@ -48,7 +48,7 @@ const Contact = () => {
                 </motion.div>
 
                 <footer className="mt-20 text-gray-500 font-mono text-sm">
-                    <p>&copy; 2025 Surafel Mulaw. Crafted with React & Tailwind.</p>
+                    <p>&copy; 2026 Surafel Kindu Mulaw.</p>
                 </footer>
             </div>
         </section>

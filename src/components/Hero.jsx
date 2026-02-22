@@ -55,12 +55,12 @@ const Hero = () => {
                             <span className="text-sm font-mono text-gray-300">
                                 Creator of
                             </span>
-                            <a className="text-[#00f38d] hover:text-[#00d078] transition-colors flex flex-row items-center gap-2" 
+                            <a className="text-[#00f38d] hover:text-[#00d078] hover:underline transition-colors flex flex-row items-center gap-2" 
                                 href="https://halt-api.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer">
+                                    <p className='font-mono tracking-widest text-xs uppercase'>Halt Rate</p>
                                     <img src="/halt-logo.svg" alt="Halt logo" className=" h-5 w-5 rounded-sm object-contain" />
-                                    <p>Halt Rate Limiting</p>
                                 </a>
                                 {/* <span className="text-sm font-mono text-gray-300">
                                 Rate Limiting
@@ -121,8 +121,8 @@ const Hero = () => {
                     <div className="w-full max-w-[460px] mx-auto">
                         <div className="glass-panel rounded-2xl p-4 border border-white/20">
                             <div className="mb-3 flex items-center justify-between">
-                                <span className="text-xs font-mono tracking-widest text-gray-400">CONNECT_GRID</span>
-                                <span className="text-xs font-mono text-[#00f38d]">ONLINE</span>
+                                <span className="text-xs font-mono tracking-widest text-gray-400">CONNECT</span>
+                                <span className="text-xs font-mono text-[#00f38d] flex flex-row items-center gap-2"><div className="w-2 h-2 bg-[#00f38d] rounded-full animate-pulse"></div> ONLINE</span>
                             </div>
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                 {socialBubbles.map((item) => (

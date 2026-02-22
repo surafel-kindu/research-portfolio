@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     const stats = [
-        { number: '3+', label: 'Years Experience' },
+        { number: '5+', label: 'Years Experience' },
         { number: '20+', label: 'Projects Completed' },
         { number: '10+', label: 'Technologies' },
-        { number: '2', label: 'Top Tech Companies' },
+        { number: '2+', label: 'Open Source Projects' },
     ];
 
     return (
@@ -32,13 +32,13 @@ const About = () => {
                         className="glass-panel p-8 rounded-2xl"
                     >
                         <p className="text-lg mb-6 leading-relaxed text-gray-300">
-                            Hi! I'm <span className="text-[#00f38d] font-bold">Surafel Mulaw</span>, a Software Engineer currently working at <span className="text-white font-bold">Google</span> on Ads Measurement & Insights, focusing on privacy-preserving technologies.
+                            Hi! I&apos;m <span className="text-[#00f38d] font-bold">Surafel Mulaw</span>, a Software Engineer currently working at <span className="text-white font-bold">TestSavant.AI</span>, where I build security-focused AI systems, LLM protection workflows, and production web platforms.
                         </p>
                         <p className="text-lg mb-6 leading-relaxed text-gray-300">
-                            Previously, I was a Forward Deployed Software Engineer at <span className="text-white font-bold">Palantir Technologies</span>, specializing in data integration and analysis solutions for complex challenges.
+                            I also build personal products end-to-end. Notable projects include <span className="text-white font-bold">Halt</span>, an open-source rate-limiting toolkit published to npm and PyPI, and <span className="text-white font-bold">Climate Negotiator</span>, a tool that helps climate conference participants organize and run structured negotiations.
                         </p>
                         <p className="text-lg leading-relaxed text-gray-300">
-                            I'm passionate about full-stack development, modern dynamic web experiences, and robust backend architectures. My expertise spans <span className="text-[#00f38d]">React, Node.js, Three.js</span>, and cloud infrastructure.
+                            My work blends product thinking with strong engineering fundamentals across <span className="text-[#00f38d]">React, Next.js, Node.js, Python, and AI tooling</span>. I care about building software that is practical, secure, and easy to scale.
                         </p>
                     </motion.div>
 
